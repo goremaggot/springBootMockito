@@ -1,13 +1,13 @@
-package org.goremaggot.test.springbootapp.springbootapp_test;
+package org.goremaggot.test.springboot.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringbootappTestApplication {
+public class SpringbootTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringbootappTestApplication.class, args);
+		SpringApplication.run(SpringbootTestApplication.class, args);
 	}
 
 }
