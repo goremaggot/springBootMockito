@@ -2,11 +2,23 @@ package org.goremaggot.test.springboot.app.models;
 
 import org.goremaggot.test.springboot.app.exceptions.DineroInsuficienteException;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
+@Entity
+@Table(name="cuentas")
 public class Cuenta {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String persona;
     private BigDecimal saldo;
 
